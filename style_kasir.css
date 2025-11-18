@@ -1,0 +1,38 @@
+body{
+	display: flex;
+	justify-content:center ;
+	align-items:center ;
+}
+
+.halaman-kasir{
+	width:500px ;
+	height: 650px;
+	background-color:whitesmoke ;
+}
+
+.halaman-kasir h2{
+	text-align: center;
+}
+
+.halaman-kasir label{
+	display: flex;
+}
+
+.halaman-kasir input{
+	width: 300px;
+	height: 20px;
+	border-radius: 8px;
+	border: 1px solid darkblue;
+	padding: 5px;
+}
+
+.halaman-kasir button{
+	width: 80%;
+	height: 30px;
+	background-color: darkblue;
+	color: white;
+	border-radius: 7px;
+	border: none;
+	font-size: 10px;
+	cursor: pointer;
+}

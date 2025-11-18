@@ -1,0 +1,149 @@
+html{
+	scroll-behavior: smooth;
+}
+
+
+*{
+	/* padding->digunakan untuk mengatur jarak antara isi elemen dengan border  */
+	padding: 3px;
+	margin: 3px;
+	box-sizing: border-box;
+}
+
+body{
+
+	background-color: whitesmoke;
+}
+
+.layout-logo-judul img{
+	width: 90px;
+	height: 90px;
+}
+
+.layout-logo-judul h3{
+	font-family: Bahnschrift SemiBold;
+	font-size: 15px;
+}
+
+.layout-logo-judul{
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+
+nav ul{
+	display: flex;
+	/*list style digunakan untuk menghapus list item*/
+	list-style: none;
+}
+
+nav ul li a{
+	font-family: Bahnschrift SemiBold;
+	color: black;
+	text-decoration: none;
+
+}
+
+.halaman-atas{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	position: sticky;
+	top: 0;
+}
+
+.halamansatu{
+	width: 100%;
+	height: 650px;
+	background-color: red;
+	display: flex;
+}
+
+.halamandua{
+	width: 100%;
+	height: 650px;
+	background-color: black;
+}
+
+.halamantiga{
+	width: 100%;
+	height: 650px;
+	background-color: green;
+}
+
+.slide-gambar{
+
+	width: 100%;
+	height: 650px;
+	background-image: url("gambar1.jpg");
+	background-size: cover;
+	background-position: center;
+	animation: slide 15s infinite;
+}
+
+@keyframes slide{
+
+	0%{
+		background-image: url("gambar1.jpg");
+	}
+
+	33%{
+		background-image: url("gambar2.jpg");
+	}
+
+	75%{
+		background-image: url("gambar3.jpg");
+	}
+
+}
+
+.dropdown-kegiatan-dpr{
+
+	display: none;
+
+	position: absolute;
+	z-index: 1000;
+
+	top: 80px;
+	left: 650px;
+	background-color: white;
+	padding: 3px;
+	min-width: 200px;
+	border-radius: 2px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+
+
+
+}
+
+.navigasi ul li:hover .dropdown-kegiatan-dpr{
+	display: block;
+}
+
+.halamansatu .page1{
+	width: 50%;
+	height: 600px;
+	background-color: whitesmoke;
+	padding: 50px 5px;
+
+}
+
+.halamansatu .page2{
+	width: 50%;
+	height: 600px;
+	background-color: white;
+	padding: 50px 5px;
+}
+
+.halamansatu .page1 img{
+	width: 800px;
+	height: 500px;
+}
+
+.halamansatu .page2 p{
+	font-family: Berlin Sans FB;
+	font-size: 25px;
+	color: darkviolet;
+	text-align: justify;
+}
